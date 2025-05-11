@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				github: {
+					primary: '#00ADB5',
+					secondary: '#393E46',
+					accent: '#F8B500',
+					tertiary: '#EEEEEE',
 				}
 			},
 			borderRadius: {
@@ -84,11 +91,45 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'typing': {
+					from: { width: '0' },
+					to: { width: '100%' }
+				},
+				'blink-caret': {
+					'from, to': { borderColor: 'transparent' },
+					'50%': { borderColor: '#00ADB5' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-5px)' }
+				},
+				'scale-in': {
+					'0%': { transform: 'scale(0.95)', opacity: '0' },
+					'100%': { transform: 'scale(1)', opacity: '1' }
+				},
+				'progress-fill': {
+					'0%': { width: '0%' },
+					'100%': { width: 'var(--progress-width)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'typing': 'typing 3.5s steps(40, end)',
+				'blink-caret': 'blink-caret .75s step-end infinite',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'scale-in': 'scale-in 0.3s ease-out',
+				'progress-fill': 'progress-fill 1s ease-out forwards'
+			},
+			fontFamily: {
+				'jetbrains': ['JetBrains Mono', 'monospace'],
+				'inter': ['Inter', 'sans-serif']
 			}
 		}
 	},
