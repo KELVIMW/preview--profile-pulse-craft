@@ -10,54 +10,48 @@ import PhilosophySection from '@/components/PhilosophySection';
 import ContactSection from '@/components/ContactSection';
 
 const Index = () => {
-  // Personal information - customized with your data
+  // Personal information - replace with your own
   const personalInfo = {
-    name: "Daniel Santos",
+    name: "Your Name",
     title: "Specialist in 🔎 Root Cause Analysis • ☁️ Cloud Infrastructure • 🔐 Security Automation",
-    description: "Building resilient systems, detecting vulnerabilities, and solving complex problems at their source before they escalate.",
-    portfolioUrl: "https://your-portfolio.com", // Replace with your actual portfolio URL
-    emailAddress: "daniel.santos@example.com", // Replace with your actual email
+    description: "Building resilient systems, automating intelligent detection, and solving complex problems before they escalate.",
+    portfolioUrl: "https://your-site.com",
+    emailAddress: "you@example.com",
     experience: "5 years",
     specialty: "Problem-Solving is my Superpower",
-    linkedIn: "https://linkedin.com/in/daniel-santos", // Replace with your actual LinkedIn URL
-    github: "https://github.com/daniel-santos", // Replace with your actual GitHub URL
-    githubUsername: "daniel-santos" // Replace with your actual GitHub username
+    linkedIn: "https://linkedin.com/in/yourusername",
+    github: "https://github.com/yourusername",
+    githubUsername: "yourusername"
   };
 
   // Achievements
   const achievements = [
-    "Migrated entire AWS infrastructure to GCP in under 24 hours with App Engine implementation",
-    "Orchestrated GCP infrastructure migration from Brazil to USA with improved architecture using VPNs and Kubernetes",
-    "Developed an application to migrate and recover a 20TB database, splitting into 5 scalable nodes",
-    "Implemented Terraform with Terragrunt and Helm charts for Infrastructure as Code",
-    "Led security initiatives aligned with ISO 27001, LGPD compliance, and pentest validations"
+    "I've migrated entire infrastructures across continents in under 24 hours",
+    "Automated recovery of databases over 20TB",
+    "Led security initiatives aligned with ISO 27001, LGPD, and pentest validations"
   ];
 
   // Skills
   const skills = [
     {
-      category: "Cloud Infrastructure (3+ years on GCP)",
-      items: ["App Engine", "Cloud Functions", "VPC", "Kubernetes", "Helm", "Terraform", "Terragrunt"]
+      category: "Cloud Engineering (3+ years on GCP)",
+      items: ["AppEngine", "Cloud Functions", "VPC", "GKE", "Helm", "Terraform"]
     },
     {
       category: "Security",
-      items: ["ISO 27001", "LGPD", "Pentesting", "Vulnerability scanning", "Scorecards", "Threat Detection"]
+      items: ["Threat detection", "Scorecards", "Vulnerability scanning", "Data protection (LGPD)", "Pentesting"]
     },
     {
       category: "Automation",
-      items: ["Error detection", "Monitoring pipelines", "Self-healing systems", "Data sync", "Database migration"]
+      items: ["Monitoring pipelines", "Self-healing systems", "Data sync", "Backup automation"]
     },
     {
-      category: "Languages & Development",
-      items: ["Python", "Bash/Shell", "TypeScript/JavaScript", "Go", "PHP", "API Development"]
-    },
-    {
-      category: "Databases",
-      items: ["MySQL", "MongoDB", "Database optimization", "Data migration"]
+      category: "Languages",
+      items: ["Python", "Bash", "TypeScript/JavaScript", "Go", "PHP"]
     },
     {
       category: "Leadership",
-      items: ["Tech Lead", "SRE", "Root cause analysis", "Fast learning"]
+      items: ["Tech Lead", "SRE", "Security teams"]
     }
   ];
 
@@ -65,32 +59,30 @@ const Index = () => {
   const certifications = [
     { name: "Google Cloud Certified – Associate Cloud Engineer" },
     { name: "ISO 27001 Security Foundation" },
-    { name: "DevSecOps Essentials - Gabriel Pato Course" },
+    { name: "DevSecOps Essentials" },
+    { name: "Advanced Python Automation" },
     { name: "Pentest & Ethical Hacking Fundamentals" },
-    { name: "LGPD Compliance Training" },
-    { name: "Advanced Cloud Infrastructure (GCP)" }
+    { name: "LGPD Compliance Training" }
   ];
 
   // Skill Categories for the interactive skill section
   const skillCategories = [
     {
-      category: "Cloud Infrastructure",
+      category: "Cloud Infra",
       skills: [
-        { name: "GCP", level: 95 },
+        { name: "GCP", level: 90 },
         { name: "AWS", level: 75 },
         { name: "Kubernetes", level: 85 },
-        { name: "Terraform", level: 90 },
-        { name: "Helm", level: 85 }
+        { name: "Terraform", level: 80 }
       ]
     },
     {
       category: "Automation",
       skills: [
-        { name: "Python", level: 90 },
-        { name: "Bash/Shell", level: 92 },
-        { name: "CI/CD Pipelines", level: 85 },
-        { name: "Monitoring", level: 88 },
-        { name: "Data Sync", level: 90 }
+        { name: "Python", level: 95 },
+        { name: "Bash", level: 90 },
+        { name: "GitHub Actions", level: 85 },
+        { name: "CI/CD", level: 88 }
       ]
     },
     {
@@ -98,29 +90,17 @@ const Index = () => {
       skills: [
         { name: "ISO 27001", level: 80 },
         { name: "LGPD", level: 85 },
-        { name: "Penetration Testing", level: 75 },
-        { name: "Vulnerability Detection", level: 82 },
-        { name: "Security Automation", level: 88 }
+        { name: "Pentest", level: 75 },
+        { name: "OWASP ZAP", level: 70 }
       ]
     },
     {
       category: "Development",
       skills: [
-        { name: "API Development", level: 88 },
-        { name: "Go", level: 75 },
-        { name: "TypeScript/JavaScript", level: 85 },
-        { name: "PHP", level: 80 },
-        { name: "Database Management", level: 92 }
-      ]
-    },
-    {
-      category: "Problem Solving",
-      skills: [
-        { name: "Root Cause Analysis", level: 98 },
-        { name: "Quick Solution Design", level: 95 },
-        { name: "System Debugging", level: 90 },
-        { name: "Performance Optimization", level: 85 },
-        { name: "Incident Response", level: 92 }
+        { name: "Node.js", level: 80 },
+        { name: "Go", level: 65 },
+        { name: "PHP", level: 85 },
+        { name: "TypeScript", level: 90 }
       ]
     }
   ];
@@ -128,71 +108,51 @@ const Index = () => {
   // Featured Projects
   const projects = [
     {
-      title: "GCP Migration Express",
-      description: "Migrated entire infrastructure from AWS to GCP in 24 hours, implementing App Engine and Cloud Functions architecture",
-      technologies: ["GCP", "AWS", "App Engine", "Cloud Functions", "Python", "Bash"],
-      link: "https://github.com/daniel-santos/gcp-migration-express"
+      title: "CloudShift 24h",
+      description: "Migrated entire infra from AWS to GCP in 24h, re-architected to microservices",
+      technologies: ["GCP", "AWS", "Terraform", "Kubernetes"],
+      link: "https://github.com/yourusername/cloudshift"
     },
     {
-      title: "InfraArch",
-      description: "Redesigned and migrated GCP infrastructure from Brazil to US with improved architecture using VPNs and Kubernetes",
-      technologies: ["Kubernetes", "Helm", "VPC", "Terraform", "Terragrunt", "GCP"],
-      link: "https://github.com/daniel-santos/infraarch"
+      title: "InfraSplit",
+      description: "Split and automated the replication of a 20TB monolithic DB into 5 scalable nodes",
+      technologies: ["MySQL", "Python", "Docker", "CI/CD"],
+      link: "https://github.com/yourusername/infrasplit"
     },
     {
-      title: "DB Splitter",
-      description: "Application to migrate and recover a 20TB database by splitting into 5 scalable nodes with automatic syncing",
-      technologies: ["Python", "MySQL", "MongoDB", "Docker", "Data Migration"],
-      link: "https://github.com/daniel-santos/db-splitter"
+      title: "AutoSentinel",
+      description: "Built proactive monitoring system to detect anomalies, errors and misconfigs",
+      technologies: ["Go", "Prometheus", "Grafana", "Machine Learning"],
+      link: "https://github.com/yourusername/autosentinel"
     },
     {
-      title: "SecureScore",
-      description: "Security scorecard and automated vulnerability detection system with ISO 27001 and LGPD compliance checks",
-      technologies: ["TypeScript", "Go", "Security", "ISO 27001", "LGPD"],
-      link: "https://github.com/daniel-santos/securescore"
-    },
-    {
-      title: "AutoMonitor",
-      description: "Proactive monitoring system to detect anomalies, errors and security vulnerabilities with self-healing capabilities",
-      technologies: ["Python", "Prometheus", "Grafana", "Machine Learning", "Bash"],
-      link: "https://github.com/daniel-santos/automonitor"
-    },
-    {
-      title: "PentestOrchestrator",
-      description: "Tool to orchestrate, monitor and analyze results from third-party penetration tests across applications",
-      technologies: ["Go", "Security", "Pentesting", "API Integration", "Reporting"],
-      link: "https://github.com/daniel-santos/pentestorchestrator"
+      title: "SecurityPulse",
+      description: "Developed scorecard-based automated security audit for GitHub and APIs",
+      technologies: ["TypeScript", "Node.js", "GitHub Actions", "REST APIs"],
+      link: "https://github.com/yourusername/securitypulse"
     }
   ];
 
   // Philosophy section
   const philosophyData = {
-    quote: "Problems are puzzles waiting to be solved. The key is finding the root cause, not just treating symptoms.",
-    philosophy: "🔍 I approach every challenge with a detective's mindset - investigating thoroughly before proposing sustainable solutions.",
+    quote: "Systems fail. What matters is how fast and how well you recover and improve.",
+    philosophy: "🔎 I believe every failure is feedback — and every crash is an opportunity for innovation.",
     values: [
       {
-        title: "Root Cause Analysis",
-        description: "I dig deep to find the real source of problems instead of applying band-aid fixes."
+        title: "Resilience First",
+        description: "Build systems that survive the unexpected and recover gracefully from failure."
       },
       {
-        title: "Automation First",
-        description: "If a task needs to be done more than once, it deserves to be automated for efficiency and consistency."
+        title: "Security by Design",
+        description: "Prevention is cheaper than incident response. Security belongs in every stage."
       },
       {
-        title: "Proactive Security",
-        description: "I believe in detecting and addressing vulnerabilities before they become incidents."
+        title: "Automate Everything",
+        description: "Repetition is waste — automate the predictable to focus on solving new problems."
       },
       {
-        title: "Continuous Learning",
-        description: "Technology evolves constantly, and I make it a priority to evolve with it."
-      },
-      {
-        title: "Resilient Systems",
-        description: "I design infrastructure that can withstand failures and recover gracefully when they occur."
-      },
-      {
-        title: "Versatile Problem Solving",
-        description: "My adaptability allows me to propose effective solutions across different technical domains."
+        title: "Think in Root Causes",
+        description: "Don't patch symptoms. Identify and solve the source of problems."
       }
     ]
   };
@@ -234,7 +194,7 @@ const Index = () => {
           linkedIn={personalInfo.linkedIn}
           github={personalInfo.github}
           portfolio={personalInfo.portfolioUrl}
-          calendlyLink="https://calendly.com/daniel-santos/30min"
+          calendlyLink="https://cal.com/you"
         />
       </div>
     </div>
